@@ -1,0 +1,64 @@
+.page-home {
+
+  background-color: $stack-blue;
+
+    h1 {
+        font-size: 2em;
+
+        @include break-over(600px) {
+          font-size: 2.5em;
+        }
+        @include break-over(800px) {
+          font-size: 3em;
+        }
+        @include break-over(1000px) {
+          font-size: 4em;
+        }
+    }
+
+    h4 {
+      font-size: 0.75em;
+
+      @include break-over(600px) {
+        font-size: 1em;
+      }
+      @include break-over(800px) {
+        font-size: 1.2em;
+      }
+      @include break-over(1000px) {
+        font-size: 1.5em;
+      }
+
+        span {
+            font-size: 70%;
+            position: relative;
+            bottom: 0.3em;
+        }
+        small {
+            color: $light-gray;
+            font-size: 75%;
+            font-weight: 100;
+            font-style: italic;
+        }
+    }
+
+    form {
+      input {
+        font-size: 1.5em;
+        max-width: 30em;
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        padding: 0.75em/2;
+        @include break-over($mobile-breakpoint) {
+          padding: 0.75em;
+        }
+      }
+      input[type="email"] {
+        padding: 1.5em/2;
+        @include break-over($mobile-breakpoint) {
+          padding: 1.5em;
+        }
+      }
+    }
+}

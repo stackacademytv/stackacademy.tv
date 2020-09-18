@@ -1,0 +1,35 @@
+
+      </main>
+
+      <footer class="flex one center">
+        <div class="social">
+            <a target="_blank" href="{{ site.data.social.youtube }}">
+              <i class="icon">{% include icons/brands/youtube.svg %}</i>
+            </a>
+            <a target="_blank" href="{{ site.data.social.facebook }}">
+              <i class="icon">{% include icons/brands/facebook.svg %}</i>
+            </a>
+            <a target="_blank" href="{{ site.data.social.twitter }}">
+              <i class="icon">{% include icons/brands/twitter.svg %}</i>
+            </a>
+            <a target="_blank" href="/feed.xml">
+              <i class="icon">{% include icons/solid/rss.svg %}</i>
+            </a>
+        </div>
+
+        <menu>
+          <a href="/courses/" class="courses">Courses</a>
+          <span>/</span>
+          <a href="/blog/" class="blog">Blog</a>
+          <span>/</span>
+          <a href="/about/" class="about">About</a>
+          <span>/</span>
+          <a href="/contact/" class="contact">Contact</a>
+        </menu>
+
+        <small>{{ site.title }} © {{ 'now' | date: '%Y' }}</small>
+
+      </footer>
+
+  </body>
+</html>

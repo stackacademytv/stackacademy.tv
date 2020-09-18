@@ -1,0 +1,27 @@
+- name: 'nginx-fundamentals'
+  referral_url: 'https://www.udemy.com/course/nginx-fundamentals/?referralCode=9F531AEE2EA5531C0EC3'
+  youtube_intro: 'https://www.youtube.com/watch?v=lSieu8BfB24'
+
+- name: 'jamstack'
+  referral_url: 'https://www.udemy.com/course/jamstack/?referralCode=4EE49D92223D92AFF113'
+  youtube_intro: 'https://www.youtube.com/watch?v=y2H_XRi9YIc'
+
+- name: 'webassembly-emscripten'
+  referral_url: 'https://www.udemy.com/course/webassembly-emscripten/?referralCode=63283E61A5D721927B9E'
+  youtube_intro: 'https://www.youtube.com/watch?v=EVpL5AphlF0'
+
+- name: 'yarn-dependency-management'
+  referral_url: 'https://www.udemy.com/course/yarn-dependency-management/?referralCode=97714993ECBA9516A87A'
+  youtube_intro: 'https://www.youtube.com/watch?v=zn4FLT_lGJM'
+
+- name: 'electron'
+  referral_url: 'https://www.udemy.com/course/nginx-fundamentals/?referralCode=9F531AEE2EA5531C0EC3'
+  youtube_intro: 'https://www.youtube.com/watch?v=KFnyUMony98'
+
+- name: 'master-riot'
+  referral_url: 'https://www.udemy.com/course/master-electron/?referralCode=FF3D09D1EBFE9763CDA0'
+  youtube_intro: 'https://www.youtube.com/watch?v=aQISSyBHMtk'
+
+- name: 'progressive-web-apps'
+  referral_url: 'https://www.udemy.com/course/progressive-web-apps/?referralCode=AA1EE0D5A81D8CDBDBC3'
+  youtube_intro: 'https://www.youtube.com/watch?v=XREAqXp33RY'

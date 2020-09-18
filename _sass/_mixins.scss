@@ -1,0 +1,8 @@
+/// Mixin to manage responsive breakpoints
+@mixin break-over($breakpoint) {
+
+  // Prints a media query based on the value
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}

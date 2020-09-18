@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }} | Stackacademy.tv</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+
+  <body class="page-{{ page.body_class | default: 'default' }}">
+
+    <nav>
+      <div class="inner">
+        <a href="/"><img class="logo" src="/img/logo.png" /></a>
+        <input id="bmenub" type="checkbox" class="show">
+        <label for="bmenub" class="burger pseudo button">&#8801;</label>
+        <div class="menu">
+          <a href="/courses/" class="courses {% if page.url contains '/courses' %}active{% endif %}">
+            <i class="icon">{% include icons/solid/graduation-cap.svg %}</i> Courses</a>
+            <a href="/blog/" class="blog {% if page.url contains '/blog' %}active{% endif %}">
+            <i class="icon">{% include icons/solid/rss.svg %}</i> Blog</a>
+          <a href="/about/" class="about {% if page.url contains '/about' %}active{% endif %}">
+            <i class="icon">{% include icons/solid/user.svg %}</i> About</a>
+          <a href="/contact/" class="contact {% if page.url contains '/contact' %}active{% endif %}">
+            <i class="icon">{% include icons/solid/envelope.svg %}</i> Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>

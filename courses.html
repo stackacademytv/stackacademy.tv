@@ -1,0 +1,10 @@
+---
+layout: default
+permalink: '/courses/'
+---
+
+{% for course in site.data.courses %}
+
+<strong>{{ course.name }}</strong><br>
+
+{% endfor %}

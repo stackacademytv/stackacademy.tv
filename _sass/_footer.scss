@@ -1,0 +1,45 @@
+footer {
+
+  padding: $site-padding*2 0;
+  background-color: $footer-blue;
+  margin-top: $site-padding/2;
+
+  @include break-over($mobile-breakpoint) {
+    margin-top: $site-padding;
+  }
+
+  .social {
+    margin: 0 auto;
+    text-align: center;
+
+    a {
+      padding: 0.25em;
+      margin: 0 0.5em;
+    }
+
+    svg {
+      fill: $white;
+    }
+  }
+
+  menu {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.75em;
+
+    a {
+      color: $white;
+    }
+
+    span {
+      color: $white;
+      opacity: 0.25;
+      margin: 0 0.35em;
+    }
+  }
+
+  small {
+    color: $white;
+    text-align: center;
+  }
+}
