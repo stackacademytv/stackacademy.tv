@@ -62,23 +62,17 @@ nav {
       &.active {
         color: $white;
         border-bottom: 2px solid $white;
-
-        .icon svg {
-          fill: $white;
-        }
       }
 
       &:last-child {
         margin-right: 0;
       }
 
-      .icon {
-        margin-right: 0.25em;
-
-        svg {
-          fill: $stack-blue;
-          height: 0.75em;
-        }
+      i {
+        font-size: 0.75em;
+        margin-right: 0.1em;
+        position: relative;
+        bottom: 2px;
       }
 
     }
@@ -92,7 +86,7 @@ nav {
       color: $blue;
       font-size: 1em;
 
-      .icon {
+      i {
         display: none;
       }
     }

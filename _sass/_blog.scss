@@ -1,0 +1,114 @@
+
+.post {
+
+  p a {
+    text-decoration: underline;
+  }
+}
+
+.post-date {
+  font-weight: 600;
+  color: $gray;
+  margin-bottom: 1em;
+  display: block;
+  i {
+    margin-right: 0.2em;
+  }
+}
+
+.page-blog {
+
+  h1 {
+    padding-bottom: 0;
+  }
+
+  .sep {
+    margin: 1em auto;
+    height: 0.2em;
+    border-radius: $radius;
+    background-color: lighten($light-gray, 8%);
+  }
+
+  .post {
+    padding: 2em 0 1em;
+
+    .featured-image a {
+      display: block;
+      background-size: cover;
+      background-position: center 0;
+      min-height: 200px;
+      height: 100%;
+      width: 100%;
+      border-radius: $radius;
+    }
+
+    h2 {
+      padding: 0.1em 0 0.15em;
+
+      a {
+        color: $black;
+      }
+    }
+
+    .more {
+      font-weight: bold;
+      text-decoration: underline;
+      font-size: 1.1em;
+    }
+  }
+
+  .pagination {
+
+    overflow: auto;
+    padding-top: 1em;
+    text-align: center;
+    @include break-over(600px) {
+      padding-top: 2em;
+    }
+
+    .button {
+      margin: 0;
+      background-color: $blue;
+    }
+
+    .page_number {
+      background-color: transparent;
+      font-weight: bold;
+      display: inline-block;
+      color: $black;
+
+      small {
+        padding: 0 0.2em;
+      }
+    }
+
+  }
+}
+
+.page-post {
+
+  .post-date {
+    margin: 1.5em 0 0;
+    font-size: 1em;
+
+    @include break-over($mobile-breakpoint) {
+      margin: 3em 0 0;
+      font-size: 1.2em;
+    }
+  }
+
+  h1 {
+    padding-top: 0.25em;
+  }
+
+  .featured-image {
+    float: left;
+    border-radius: $radius;
+    margin: 0.3em $site-padding $site-padding 0;
+    width: 100%;
+
+    @include break-over(600px) {
+      width: 40%;
+    }
+  }
+}

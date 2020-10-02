@@ -1,3 +1,52 @@
+---
+---
 
-    <h3>COURSE PAGE LAYOU</h3>
-    {{ content }}
+{% comment %}
+Get Page data key based on filename
+i.e. The course filename must match an entry in data.courses
+{% endcomment %}
+{% assign course_key = page.name|replace:'.md' %}
+{% assign course_data = site.data.courses[course_key] %}
+{% assign body_class = 'course ' | append: course_key %}
+
+
+{% include header.html title=course_data.nicename description=course_data.description body_class=body_class %}
+<h1>{{ course_data.nicename }}: <small>{{ course_data.subname }}</small></h1>
+<p class="h4 description">{{ course_data.description }}</p>
+
+<div class="flex one summary">
+    <div class="two-third-700">
+      <div class="youtube-container">
+        <iframe src="{{ course_data.youtube_intro }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="third-700">
+      <a href="{{ course_data.referral_url }}" target="_blank" class="button"><i class="icon-graduation-cap"></i> Enrol Now</a>
+      <ul>
+        <li><i class="icon-videocam"></i>{{ course_data.num_lessons }} High Quality Lectures</li>
+        <li><i class="icon-money"></i>30-Day Money Back Guarantee</li>
+        <li><i class="icon-certificate"></i>Certificate of Completion</li>
+      </ul>
+    </div>
+</div>
+
+<h4>What students have say about this course:</h4>
+<div class="featured_reviews flex one three-700">
+  {% for featured_review in course_data.featured_reviews %}
+  <div class="review">
+    <blockquote class="inner">
+      <span class="text">{{ featured_review.review }}</span>
+      <span class="user">{{ featured_review.user }}</span>
+    </blockquote>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="course-content markdown">
+  <h3 class="h2">Course Overview</h3>
+  {{ content }}
+</div>
+
+<strong class="h3"><a class="tu h4" href="{{ course_data.referral_url }}" target="_blank">Learn more about this course on Udemy</a></strong>
+
+{% include footer.html %}

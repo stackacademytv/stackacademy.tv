@@ -26,6 +26,11 @@ description: >-
   Google search results) and in your feed.xml site description.
 baseurl: ""
 url: ""
+permalink: /blog/:title/
+paginate: 3
+paginate_path: "/blog/page/:num/"
+excerpt_separator: <!--more-->
+
 twitter_username: academystack
 github_username:  jekyll
 defaults:
@@ -39,10 +44,17 @@ defaults:
       path: "courses/"
     values:
       layout: "course"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 sass:
   style: compressed

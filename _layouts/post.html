@@ -1,0 +1,11 @@
+---
+body_class: post
+---
+
+{% include header.html %}
+
+<span class="post-date"><i class="icon-calendar-empty"></i> {{ page.date | date: "%b %d, %Y" }}</span>
+<h1>{{ page.title }}</h1>
+<img class="featured-image" src="{{ page.image }}" alt="Featured post image">{{ content }}
+
+{% include footer.html %}

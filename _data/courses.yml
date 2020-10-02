@@ -1,27 +1,104 @@
-- name: 'nginx-fundamentals'
-  referral_url: 'https://www.udemy.com/course/nginx-fundamentals/?referralCode=9F531AEE2EA5531C0EC3'
-  youtube_intro: 'https://www.youtube.com/watch?v=lSieu8BfB24'
+nginx-fundamentals:
+  nicename: NGINX Fundamentals
+  subname: High Performance Servers from Scratch
+  description: Learn to install & configure an NGINX web server from scratch.
+  referral_url: https://www.udemy.com/course/nginx-fundamentals/?referralCode=9F531AEE2EA5531C0EC3
+  youtube_intro: https://www.youtube.com/embed/lSieu8BfB24
+  num_lessons: 37
+  featured_reviews:
+    - review: Great clear and fast explanations. He does not linger on a subject and his examples make total sense.
+      user: Daniel Maldonado
+    - review: This is not a “hello world” tutorial like I see a lot of on Udemy. This is an in-depth higher education level course that is infinitely useful.
+      user: Sam Reaves
+    - review: This is great sharp and to the point well done this guy is a master!
+      user: Yaniv Ron
 
-- name: 'jamstack'
-  referral_url: 'https://www.udemy.com/course/jamstack/?referralCode=4EE49D92223D92AFF113'
-  youtube_intro: 'https://www.youtube.com/watch?v=y2H_XRi9YIc'
+jamstack:
+  nicename: JAMStack
+  subname: The Complete Guide
+  description: Learn the JAMStack from start to finish. Create dynamic serverless architectures using JavaScript, APIs & Markup.
+  referral_url: https://www.udemy.com/course/jamstack/?referralCode=4EE49D92223D92AFF113
+  youtube_intro: https://www.youtube.com/embed/y2H_XRi9YIc
+  num_lessons: 27
+  featured_reviews:
+    - review: This course was seriously amazing. The content is easy to follow, the animations are simple and well designed, and the flow is spot on. This and Ray's course on PWA's are hands down my two favorite. I look forward to taking more courses soon. Thank You :-)
+      user: Adam Kruger
+    - review: As detailed as possible. Direct and concise. Provides an excellent basis for progressing in this type of promising architecture.
+      user: Mathieu Bilodeau
+    - review: Carefully designed course - adequate narration speed - excellent content and easy to follow instructions that force me to fall in love with the subject, absorb it and build on top it. I watch the lesson more than one time so that I do not miss any word said.
+      user: Ehab Bustami
 
-- name: 'webassembly-emscripten'
-  referral_url: 'https://www.udemy.com/course/webassembly-emscripten/?referralCode=63283E61A5D721927B9E'
-  youtube_intro: 'https://www.youtube.com/watch?v=EVpL5AphlF0'
+webassembly-emscripten:
+  nicename: Getting started with WebAssembly & Emscripten
+  subname: 
+  description: A complete guide for learning the WebAssembly JavaScript API and Emscripten toolset.
+  referral_url: https://www.udemy.com/course/webassembly-emscripten/?referralCode=63283E61A5D721927B9E
+  youtube_intro: https://www.youtube.com/embed/EVpL5AphlF0
+  num_lessons: 21
+  featured_reviews:
+    - review: This course really has it. Perfect introduction into WASM, very nicely presented at the right speed and with a really nice voice. Thanks a ton!
+      user: Daniel Pleh
+    - review: Very clear and concise explanations. Goes step by step from the ground up. It's a 101 course, but one that really illuminates the way forward.
+      user: Shaul Fridman
+    - review: Great course, I would highly recommend it for someone who is looking to get into WASM. The pacing is great and everything is explained clearly.
+      user: Grzegorz Tokarz
 
-- name: 'yarn-dependency-management'
-  referral_url: 'https://www.udemy.com/course/yarn-dependency-management/?referralCode=97714993ECBA9516A87A'
-  youtube_intro: 'https://www.youtube.com/watch?v=zn4FLT_lGJM'
+progressive-web-apps:
+  nicename: Progressive Web Apps
+  subname: The Concise PWA Masterclass
+  description: Everything you need to build Progressive Web Apps from Scratch, or upgrade your existing Web Apps to PWAs.
+  referral_url: https://www.udemy.com/course/progressive-web-apps/?referralCode=AA1EE0D5A81D8CDBDBC3
+  youtube_intro: https://www.youtube.com/embed/XREAqXp33RY
+  num_lessons: 43
+  featured_reviews:
+    - review: I'm not a beginning we developer and I'm already learning things. Solid foundation so far.
+      user: Jason Cooper
+    - review: As with other courses by Ray Viljoen, this course has excellent content, a great pace and lots of detail.
+      user: Randy Friend
+    - review: Clear, fast and concise. Teacher explain without boring and examples are clear and exaustive.
+      user: Luca Delai
 
-- name: 'electron'
-  referral_url: 'https://www.udemy.com/course/nginx-fundamentals/?referralCode=9F531AEE2EA5531C0EC3'
-  youtube_intro: 'https://www.youtube.com/watch?v=KFnyUMony98'
+master-electron:
+  nicename: Master Electron
+  subname: Desktop Apps with HTML, JavaScript & CSS
+  description: The Complete Electron course for learning to build Cross Platform Desktop Apps using HTML, JavaScript & CSS
+  referral_url: https://www.udemy.com/course/nginx-fundamentals/?referralCode=9F531AEE2EA5531C0EC3
+  youtube_intro: https://www.youtube.com/embed/KFnyUMony98
+  num_lessons: 59
+  featured_reviews:
+    - review: The course was structured well with no distraction from countless dependency modules. The use of vanilla JavasScript enabled me to focused on key Electron API features.
+      user: Willie J Bernard
+    - review: I really enjoyed this course. It is the most in-depth electron course I have seen. It was straight forward, well enunciated and understandable. I especially enjoyed the automatic updating and release manage section. It also was a great introduction to the MAC touchbar. All in all, I will be happy to take other course from him as the needs arise.
+      user: Donald Bradbury
+    - review: Presented well, and instructor has been great keeping course up to date as advancements and changes to Electron have evolved.
+      user: Brent Allen
 
-- name: 'master-riot'
-  referral_url: 'https://www.udemy.com/course/master-electron/?referralCode=FF3D09D1EBFE9763CDA0'
-  youtube_intro: 'https://www.youtube.com/watch?v=aQISSyBHMtk'
+yarn-dependency-management:
+  nicename: Yarn Dependency Management
+  subname: The Complete Guide
+  description: Learn to use Yarn for project Dependency Management or Distribute your own packages via the NPM registry.
+  referral_url: https://www.udemy.com/course/yarn-dependency-management/?referralCode=97714993ECBA9516A87A
+  youtube_intro: https://www.youtube.com/embed/zn4FLT_lGJM
+  num_lessons: 20
+  featured_reviews:
+    - review: Ray is a fantastic teacher, and although yarn isn't very hard to understand (especially if you are familiar with npm), he explains things very well and point out details which you might miss in the official docs. Especially useful (to me) was the workflow to test packages without publishing them on the npm registry.
+      user: Bruno Belotti
+    - review: I was able to watch the whole course at one time. It rarely happens to me, so it means the course is very interesting and the topics are much absorbing. I'm very satisfied.
+      user: Adam Niedźwiedź
+    - review: The lessons are very well paced and aren't too long. Perfect for a beginner.
+      user: Victor Basumatary
 
-- name: 'progressive-web-apps'
-  referral_url: 'https://www.udemy.com/course/progressive-web-apps/?referralCode=AA1EE0D5A81D8CDBDBC3'
-  youtube_intro: 'https://www.youtube.com/watch?v=XREAqXp33RY'
+master-riot:
+  nicename: Master Riot v3
+  subname: Learn Riot.js from Scratch
+  description: Go from zero to Master with the  React-inspired, Riot.js library. A powerful, yet flexible, javascript view layer.
+  referral_url: https://www.udemy.com/course/master-electron/?referralCode=FF3D09D1EBFE9763CDA0
+  youtube_intro: https://www.youtube.com/embed/aQISSyBHMtk
+  num_lessons: 32
+  featured_reviews:
+    - review: I had not planned to commit as much time to the course on my first sitting, but it’s so engaging and each lesson builds upon the previous learnings in a way that holds your attention. Highly recommended.
+      user: Kyle Wilson
+    - review: Nice and fast introduction to Riotjs. Since it is a lightweight framework, the author of the course did a great job describing only the parts that are needed to start. Best Riotjs video course out there!
+      user: Maksim Šinik
+    - review: Course was easy to follow and had a practical approach that I liked.
+      user: Balazs Rau

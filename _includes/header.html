@@ -5,13 +5,30 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page.title }} | Stackacademy.tv</title>
+    <meta name="description" content="{{ page.description | default: include.description }}" />
+    <title>{{ page.title | default: include.title }} | Stackacademy.tv</title>
+
+    {% comment %}
+      Set pagination pages as canonical to blog
+    {% endcomment %}
+    {% if paginator.page > 1 %}
+    <link rel="canonical" href="https://stackacademy.tv/blog/">
+    {% endif %}
+
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-75040464-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-75040464-1');
+    </script>
+
   </head>
 
-  <body class="page-{{ page.body_class | default: 'default' }}">
-
+  <body class="page-{{ page.body_class | default: layout.body_class | default: include.body_class | default: 'default' }}">
     <nav>
       <div class="inner">
         <a href="/"><img class="logo" src="/img/logo.png" /></a>
@@ -19,13 +36,13 @@
         <label for="bmenub" class="burger pseudo button">&#8801;</label>
         <div class="menu">
           <a href="/courses/" class="courses {% if page.url contains '/courses' %}active{% endif %}">
-            <i class="icon">{% include icons/solid/graduation-cap.svg %}</i> Courses</a>
+            <i class="icon-graduation-cap"></i> Courses</a>
             <a href="/blog/" class="blog {% if page.url contains '/blog' %}active{% endif %}">
-            <i class="icon">{% include icons/solid/rss.svg %}</i> Blog</a>
+            <i class="icon-rss"></i> Blog</a>
           <a href="/about/" class="about {% if page.url contains '/about' %}active{% endif %}">
-            <i class="icon">{% include icons/solid/user.svg %}</i> About</a>
+            <i class="icon-user"></i> About</a>
           <a href="/contact/" class="contact {% if page.url contains '/contact' %}active{% endif %}">
-            <i class="icon">{% include icons/solid/envelope.svg %}</i> Contact</a>
+            <i class="icon-mail-alt"></i> Contact</a>
         </div>
       </div>
     </nav>

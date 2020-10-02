@@ -1,0 +1,57 @@
+---
+title: Blog
+description: The official Stackacademy.tv blog. Read all our latest blog articles for insights on online courses, productivity and efficient learning.
+body_class: blog
+---
+
+<h1>Stackacademy Articles</h1>
+<p>A collection of articles and blog, sorted chronologically. Topics include learning, productivity and coding skills.</p>
+
+{% assign first_post = true %}
+{% for post in paginator.posts %}
+{% if first_post != true %}
+<div class="sep"></div>
+{% else %}
+{% assign first_post = false %}
+{% endif %}
+<div class="post flex">
+  <div class="featured-image one two-fifth-700 fourth-900">
+    <a href="{{ post.url }}" style="background-image: url({{ post.image }});"></a>
+  </div>
+  <div class="content one three-fifth-700 three-fourth-900">
+    <h2 class="h3"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <small class="post-date"><i class="icon-calendar-empty"></i> {{ post.date | date: "%b %d, %Y" }}</small>
+    {{ post.excerpt }}
+    <a href="{{ post.url }}" class="more">Read More...</a>
+  </div>
+</div>
+
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+{% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path }}" class="button previous">
+    <i class="icon-left-open"></i>
+  </a>
+{% else %}
+<button disabled class="previous">
+  <i class="icon-left-open"></i>
+</button>
+{% endif %}
+<div class="page_number button">
+  <small>Page:</small> {{ paginator.page }} <small>of</small> {{ paginator.total_pages }}
+</div>
+{% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path }}" class="button next">
+    <i class="icon-right-open"></i>
+  </a>
+{% else %}
+<button disabled class="next">
+  <i class="icon-right-open"></i>
+</button>
+{% endif %}
+</div>
+{% endif %}
+
+

@@ -1,10 +1,41 @@
 ---
-layout: default
-permalink: '/courses/'
+title: Courses
+description: Find out more about Stackacademy.tv's online courses and learn a new skill today.
+body_class: courses
 ---
 
-{% for course in site.data.courses %}
+<h1>Stackacademy Courses</h1>
 
-<strong>{{ course.name }}</strong><br>
+<div class="point">
+  <i class="icon-graduation-cap"></i>
+  <div>
+    <strong class="h3">Learning Efficiency</strong>
+    <p class="h5">Stackacademy.tv courses are meticulously designed to be concise, practical and engaging.</p>
+  </div>
+</div>
+<div class="point">
+  <i class="icon-videocam"></i>
+  <div>
+    <strong class="h3">High Quality Lectures</strong>
+    <p class="h5">Video production, recording & audio quality is of the highest standard.</p>
+  </div>
+</div>
+
+
+<div class="course-container flex one two-500 three-800">
+{% for course in site.data.courses %}
+{% assign course_key = course[0] %}
+{% assign course_data = course[1] %}
+<div>
+  <article class="course card">
+    <a href="/courses/{{ course_key }}/" class="logo" style="background-image:url('/img/courses/{{ course_key }}.png');"></a>
+    <footer>
+      <a href="/courses/{{ course_key }}/">
+        <h3>{{ course_data.nicename }}<br><small>{{ course_data.subname }}</small></h3>
+      </a>
+    </footer>
+  </article>
+</div>
 
 {% endfor %}
+</div>
