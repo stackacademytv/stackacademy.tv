@@ -3,6 +3,7 @@ footer {
   padding: $site-padding*2 0;
   background-color: $footer-blue;
   margin-top: $site-padding/2;
+  flex-shrink: 0;
 
   @include break-over($mobile-breakpoint) {
     margin-top: $site-padding;
