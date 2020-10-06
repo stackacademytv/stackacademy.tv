@@ -102,13 +102,31 @@
   }
 
   .featured-image {
-    float: left;
+    float: right;
     border-radius: $radius;
-    margin: 0.3em $site-padding $site-padding 0;
+    margin: $site-padding/2 0 $site-padding $site-padding*2;
     width: 100%;
 
     @include break-over(600px) {
       width: 40%;
+    }
+  }
+
+  .post-content {
+
+    .highlight {
+      color: $blue;
+      font-weight: 600;
+    }
+
+    blockquote {
+      border-color: $blue;
+      box-shadow: inset 5px 0 $blue;
+      background-color: lighten($light-gray, 7%);
+      padding: 0.75em 1em;
+      font-style: italic;
+      font-weight: 600;
+      margin: 0 0 $site-padding 0;
     }
   }
 }

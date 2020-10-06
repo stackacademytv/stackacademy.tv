@@ -39,6 +39,7 @@ defaults:
       path: ""
     values:
       layout: "default"
+      sitemap: true
   -
     scope:
       path: "courses/"
@@ -55,7 +56,6 @@ defaults:
 plugins:
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-admin
 
 sass:
   style: compressed
@@ -68,14 +68,17 @@ sass:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - fontello-import.json
+  - README.md
+  - package.json

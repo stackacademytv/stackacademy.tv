@@ -1,0 +1,19 @@
+{
+  "name": "stackacademy-site",
+  "version": "1.0.0",
+  "description": "Stackacademy.tv Jekyll Site",
+  "scripts": {
+    "start": "bundle exec jekyll serve --livereload",
+    "build": "bundle exec jekyll build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stackacademytv/stackacademy.tv.git"
+  },
+  "author": "Ray Viljoen <ray@stackacademy.tv>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stackacademytv/stackacademy.tv/issues"
+  },
+  "homepage": "https://github.com/stackacademytv/stackacademy.tv#readme"
+}
