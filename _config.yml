@@ -21,7 +21,6 @@
 title: Stackacademy.tv
 email: ray@stackacademy.tv
 description: Stackacademy.tv provides high-quality Courses for Developers, with learning-efficiency as the number one priority.
-destination: docs/
 permalink: /blog/:title/
 paginate: 3
 paginate_path: "/blog/page/:num/"
