@@ -20,19 +20,18 @@
 
 title: Stackacademy.tv
 email: ray@stackacademy.tv
-description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: ""
-url: ""
+description: Stackacademy.tv provides high-quality Courses for Developers, with learning-efficiency as the number one priority.
+destination: docs/
 permalink: /blog/:title/
 paginate: 3
 paginate_path: "/blog/page/:num/"
 excerpt_separator: <!--more-->
 
-twitter_username: academystack
-github_username:  jekyll
+udemy: https://www.udemy.com/user/rayviljoen/
+youtube: https://www.youtube.com/c/Stackacademytv
+twitter: https://www.twitter.com/AcademyStack
+facebook: https://www.facebook.com/stackacademy
+
 defaults:
   -
     scope:
