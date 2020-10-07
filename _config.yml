@@ -52,6 +52,7 @@ defaults:
 
 # Build settings
 plugins:
+  - github-pages
   - jekyll-feed
   - jekyll-paginate
 
