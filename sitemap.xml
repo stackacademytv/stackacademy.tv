@@ -9,7 +9,7 @@ sitemap: false
     {% for page in site.pages %}
     {% if page.sitemap %}
     <url>
-        <loc>{{page.url}}</loc>
+        <loc>https://stackacademy.tv{{page.url}}</loc>
     </url>
     {% endif %}
     {% endfor %}

@@ -25,6 +25,9 @@ permalink: /blog/:title/
 paginate: 3
 paginate_path: "/blog/page/:num/"
 excerpt_separator: <!--more-->
+theme: null
+redirect_from:
+  json: false
 
 udemy: https://www.udemy.com/user/rayviljoen/
 youtube: https://www.youtube.com/c/Stackacademytv
