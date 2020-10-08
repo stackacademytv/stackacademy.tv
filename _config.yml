@@ -40,7 +40,7 @@ defaults:
       sitemap: true
   -
     scope:
-      path: "courses/"
+      path: "courses/*"
     values:
       layout: "course"
   -
@@ -55,6 +55,7 @@ plugins:
   - github-pages
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-redirect-from
 
 sass:
   style: compressed

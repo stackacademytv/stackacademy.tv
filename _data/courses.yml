@@ -62,7 +62,7 @@ master-electron:
   nicename: Master Electron
   subname: Desktop Apps with HTML, JavaScript & CSS
   description: The Complete Electron course for learning to build Cross Platform Desktop Apps using HTML, JavaScript & CSS
-  referral_url: https://www.udemy.com/course/nginx-fundamentals/?referralCode=9F531AEE2EA5531C0EC3
+  referral_url: https://www.udemy.com/course/master-electron/?referralCode=FF3D09D1EBFE9763CDA0
   youtube_intro: https://www.youtube.com/embed/KFnyUMony98
   num_lessons: 59
   featured_reviews:
@@ -92,7 +92,7 @@ master-riot:
   nicename: Master Riot v3
   subname: Learn Riot.js from Scratch
   description: Go from zero to Master with the  React-inspired, Riot.js library. A powerful, yet flexible, javascript view layer.
-  referral_url: https://www.udemy.com/course/master-electron/?referralCode=FF3D09D1EBFE9763CDA0
+  referral_url: https://www.udemy.com/course/master-riot/?referralCode=B9E82B5F1088965DC532
   youtube_intro: https://www.youtube.com/embed/aQISSyBHMtk
   num_lessons: 32
   featured_reviews:
